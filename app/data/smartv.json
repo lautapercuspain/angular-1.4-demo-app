@@ -1,0 +1,34 @@
+{
+    "title": "Smart Tv Led Philips",
+    "description": "Smart Tv Led Philips Full Hd - Slim - Skype - Wifi",
+    "price": {
+        "int": "4799",
+        "dec": "00"
+    }, 
+    "totalSold": 42,
+    "images": [ {
+            "src": "app/assets/img/img1.jpg", 
+            "title": "super tv",
+            "alt": "smart tv"
+        },
+        {
+            "src": "app/assets/img/img2.jpg", 
+            "title": "super control",
+            "alt": "super control"
+        },
+        {
+            "src": "app/assets/img/img3.jpg", 
+            "title": "super HD",
+            "alt": "super HD"
+        },
+        {
+            "src": "app/assets/img/img4.jpg", 
+            "title": "all connectivity",
+            "alt": "all connectivity"
+        }
+    ],
+    "stock": false,
+    "noStockMsg": "Lo sentimos, no contamos con stock disponible, reintente más tarde."
+
+
+}

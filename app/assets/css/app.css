@@ -1,0 +1,173 @@
+#main-container {
+
+	max-width: 1200px;
+	min-height: 600px;
+	background-color: #f4f4f4;
+	margin: 0 auto;
+
+}
+#main-container header {
+  padding: 20px 10px;
+  text-align: center;
+}
+#main-container h1 {
+	text-align: center;
+	font-weight: bold;
+	margin: 20px 0px 30px 0px;
+	color: #424242;
+}
+#main-container .item-data .icon {
+  overflow: hidden;
+  text-indent: -999px;
+}
+#main-container dl {
+	  margin: 13px 0 0 0;
+	  display: inline-flex;
+	  vertical-align: middle;
+	  text-align: center;
+	  margin: 0 auto;
+	 
+	
+}
+
+#main-container .icon-label {
+  background-position: -62px -195px;
+  height: 13px;
+  width: 14px;
+}
+#main-container .icon-cart {
+  background-position: -62px -211px;
+  height: 14px;
+  width: 15px;
+}
+#main-container .product-section {
+	height: auto; 
+}
+
+.img-detail {
+	width: 10%;
+	float: left;
+}
+.central-view {
+	width: 43%;
+	margin: 0px 0px 0px 40px; 
+	float: left;
+}
+.product-details {
+	float: right;
+	width: 30%;
+	margin-right: 100px;
+
+}
+
+.product-details .ico-pay-methods {
+    background-position: 0 -317px;
+}
+.product-details .ico-shipment-methods-free {
+  background-position: -37px -346px;
+  margin-top: 10px;
+}
+aside .aditional-info {
+    position: relative;
+	float: left;
+}
+.aditional-info p {
+	float: right;
+	color: #900;
+
+}
+
+.stock-quantity-inputs {
+  float: left;
+  width: 115px;
+}
+
+.warranty-small {
+    padding-left: 50px;
+    background: url(../dist/img/warranty.png) no-repeat;
+    background-size: 33px auto;
+    float: left;
+}
+.buyer-protection .warranty-small p {
+  margin: 0px 75px 0px 0px;
+}
+.buyer-protection {
+    border-top: 1px solid #e3e3e3;
+    padding: 20px 0px 20px 0px;
+}
+.payment-methods ul.cards-list {
+  position: relative;
+  top: -2px;
+}
+.final-steps {
+  margin: 87px 0 45px 1px;
+  position: relative;
+}
+.final-steps .productStockQuantity {
+    display: block;
+    font-size: 12px;
+    width: 56px;
+}
+.payment-methods p {
+  margin: 0px 88px 0px 0px;
+}
+#defaultPaymentLogos {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin: 0px 5px 0px 0px;
+}
+#defaultPaymentLogos span{
+  display: block;
+  float: left;
+}
+.payments-small {
+  background: url(../dist/img/payment-logos-sprite.png) no-repeat;
+}
+._visa-small {
+  width: 34px;
+  height: 11px;
+  background-position: left -380px;
+}
+._master-small {
+  width: 28px;
+  height: 17px;
+  background-position: left -83px;
+}
+._amex-small, ._2-small {
+  width: 22px;
+  height: 19px;
+  background-position: left -24px;
+}
+.icon {
+  background: url(../dist/img/mercado-libre-sprite.png) no-repeat 0 0 transparent;
+  display: inline-block;
+  height: 25px;
+  position: relative;
+  width: 35px;
+}
+.mp {
+  background: url(../dist/img/mpago-sprite.png);
+  display: inline-block;
+  height: 22px;
+  text-indent: -9999px;
+  width: 86px;
+}
+.price {
+  font-size: 2.8em;
+  letter-spacing: -1px;
+  padding-bottom: 5px;
+  vertical-align: top;
+  color: #900;
+}
+.price sup{
+	vertical-align: text-top; 
+    font-size: .5em;
+    line-height: 1.5em;
+}
+.gray {
+	color: #999;
+}
+.green {
+	color: #390;
+}

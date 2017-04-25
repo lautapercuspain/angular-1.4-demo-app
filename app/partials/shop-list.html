@@ -1,0 +1,88 @@
+<div id="main-container" role="main">
+    
+    <h1>{{product.description}}</h1>
+    <header class="bg-great-info">
+	    <div>
+		    <dl class="item-data">	
+		    	<dt class="icon icon-label">Tipo de artículo:</dt>
+		    		<dd>Artículo nuevo	</dd>
+		    			<dt class="icon icon-cart">Vendidos:</dt>
+		    			<dd>	{{product.totalSold}}	vendidos	</dd>	
+		    </dl>
+	    </div>
+    </header>
+    <section class="product-section ch-actions">	
+    	<div class="img-detail">
+	    	<ul class="phone-thumbs">
+			  <li ng-repeat="img in product.images">
+			  	<figure>
+			        <img width="60" height="60" ng-src="{{img.src}}" title="{{img.title}}" alt="{{img.alt}}" ng-mouseover="setImage(img)" />
+			    </figure>
+
+			  </li>
+			</ul>
+		</div>
+	    <div class="central-view">
+			<figure>
+				<img ng-src="{{mainImageUrl.src}}" width="550px" height="450px" alt="{{mainImageUrl.alt}}" title="{{mainImageUrl.title}}" class="product">
+		    </figure>
+	    </div>
+	    
+		<div class="product-details">
+				<article class="price">
+					<strong>$ {{product.price.int}}<sup>{{product.price.dec}}</sup></strong>
+				</article>
+	    <aside class="aditional-info">
+
+			<div class="payment-methods">
+				<span class="icon ico-pay-methods"></span>	
+				<p class="cuotes">6 cuotas de <strong>{{ product.price.int / 6 | number : 2}}</strong>
+					<span>con <strong class="mp">MercadoPago</strong></span>
+				</p>	
+			</div>
+			<div id="defaultPaymentLogos" class="cards cards-list">
+			    <span class="payments-small _visa-small"></span>
+				<span class="payments-small _master-small"></span>
+				<span class="payments-small _amex-small"></span>	
+
+			</div>
+			<div class="more-options"><a href="">Mas opciones</a></div>
+			<div class="shipment-methods">
+				<span class="icon ico-shipment-methods-free"></span>
+				<p>
+					<span class="green">Envío gratis a todo el país</span>
+					<span class="gray"> por <strong>MercadoEnvíos</strong></span>
+				</p>
+				<p>
+					<span class="gray">Conoce los tiempos y las formas de envío.</span>
+				</p>
+				<p>
+					<a href="">Calcular cuándo llega</a>
+				</p>	
+				
+			</div>	
+			<div class="final-steps"> 
+				<label class="productStockQuantity">Cantidad: </label> 
+				<div class="stock-quantity-inputs" data-component="quantitySelector"> 
+				  	<input class="stock-quantity-decrements" type="button" ng-click="decrement()" name="pop" value="-" > <input id="productStockQuantity"  class="stock-quantity-input" data-validate="number" name="quantity" type="number" min="1" max="142" title="Cantidad de unidades" ng-model="count"  autocomplete="off">
+				  	<input class="stock-quantity-increments" ng-click="increment()"  type="button" name="push" value="+"> 
+				</div>
+				<span class="unit-measure"></span> 
+				 <button type="submit" class="ch-btn" ng-click="wantToBuy(product)">Comprar</button>	
+				 
+			</div>
+			<div class="buyer-protection">
+			    <div class="warranty-small">			 
+					<p><a href="http://ayuda.mercadolibre.com.ar/ayuda/Compa_Protegida_986">Compra Protegida</a> con MercadoPago</p>
+					<p>Recibe el producto que compraste o te devolvemos tu dinero.</p>
+				</div>
+			</div> 
+			</aside>
+			</div>
+	   
+
+        
+    </section>    
+
+	<div class="user-notify" role="alert"></div>
+</div> 
